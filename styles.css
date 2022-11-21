@@ -1,0 +1,135 @@
+@charset "UTF-8";
+*{
+    /* border: 1px solid red; */
+    font-family: monospace;
+    font-weight: 550;
+}
+
+body{
+    background: linear-gradient(-45deg, #1F51FF, #FF1FC1, #FFCD1F, #1FFF5D);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.root{
+    display: flex;
+    margin: 10px 50px;
+    height: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    color: white;
+}
+
+.section-container{
+    padding: 20px 30px;
+    margin: 10px 30px;
+    justify-self:center;
+    flex-direction: column;
+}
+
+.section{
+    border-radius: 20px;
+    padding: 0px 20px;
+    background-color:rgb(30, 30, 30);
+    display: flex;
+}
+
+a{
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#profile{
+    flex-direction: row;
+}
+
+#name{
+    margin: 90px 10px;
+    font-size: 25px;
+}
+
+.profile-img{
+    border-radius: 50%;
+    margin: 50px 0px;
+}
+
+#links{
+    margin: 30px 0px;
+    flex-direction: column;
+}
+
+#skills{
+    display: grid;
+    padding: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.skill{
+    margin: 10px;
+    aspect-ratio: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skill-icon{
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1e1e1e;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.icon-text{
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: #8a8a8a;;
+}
+
+#showcase-container{
+    flex:2;
+    display: flex;
+}
+
+.showcase{
+    flex:auto;
+    border-radius: 20px;
+    background-color:rgb(30, 30, 30);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+}
+
+.project-wrapper{
+    color: white;
+}
