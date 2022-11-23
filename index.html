@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Examples</title>
+<title>Portfolio</title>
 <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
 <meta name="description" content="Kosta Vukicevic developer profile">
 <meta name="keywords" content="Developer, Profile, Personal">
@@ -21,34 +21,44 @@
                 </span>
             </div>
             <div class="section" id="links">
-                <a href="https://www.linkedin.com/in/kostavukicevic/">Linkedin</a><br>
-                <a href="https://github.com/stcksmsh">GitHub</a><br>
-                <a href="mailto:vukicevickosta@gmail.com">Gmail</a><br>
+                <p>Links</p>
+                <a href="https://www.linkedin.com/in/kostavukicevic/">Linkedin<img class="link-image" src="./images/linkedin.png"></a><br>
+                <a href="https://github.com/stcksmsh">GitHub<img class="link-image" src="./images/github.png"></a><br>
+                <a href="mailto:vukicevickosta@gmail.com">Email<img class="link-image" src="./images/email.png"></a><br>
             </div>
             <div class = "section" style="flex-direction: column;margin:0;padding:0;border:0;text-align:center;">
                 <p>Skills</p>
-                <div class="section" id="skills">
-                    <div class="skill"><img class="skill-icon" src="./images/C++.png">C++</div>
-                    <div class="skill"><img class="skill-icon" src="./images/C.png">C</div>
-                    <div class="skill"><img class="skill-icon" src="./images/Java.png">Java</div>
-                    <div class="skill"><img class="skill-icon" src="./images/Python.png">Python</div>
-                    <div class="skill"><img class="skill-icon" src="./images/JS.png">JavaScript</div>
-                    <div class="skill"><img class="skill-icon" src="./images/TensorFlow.png">Tensorflow</div>
-                    <div class="skill"><img class="skill-icon" src="./images/HTML5.png">HTML</div>
-                    <div class="skill"><img class="skill-icon" src="./images/CSS3.png">CSS</div>
-                    <div class="skill"><img class="skill-icon" src="./images/React.png">React</div>
-                </div>
+                <div class="section" id="skills"></div>
             </div>
         </div>
-        <div class="section-container" id="showcase-container">
-            <div class="showcase">
-                <div class="project-wrapper"></div>
-                <div class="project-wrapper"></div>
-                <div class="project-wrapper"></div>
-                <div class="project-wrapper"></div>
+        <div class="showcase">
+            <div class="project-wrapper"></div>
+            <div class="project-wrapper"></div>
+            <div class="project-wrapper"></div>
+            <div class="project-wrapper">
+                <div class="color-picker">
+                    <p style="font-size: 20px;">Change backround colours and transition speed</p>
+                    <div id="colorpicker-container">
+                        <!-- <label for="colorpicke1r">Color Picker:</label> -->
+                        <div id="colorpicker1-wrapper"><input type="color" id="colorpicker" name="colorpicker1" value="#1F51FF"></div>
+                        
+                        <!-- <label for="colorpicker2">Color Picker:</label> -->
+                        <div id="colorpicker2-wrapper"><input type="color" id="colorpicker" name="colorpicker2" value="#FF1FC1"></div>
+                        
+                        <!-- <label for="colorpicker3">Color Picker:</label> -->
+                        <div id="colorpicker3-wrapper"><input type="color" id="colorpicker" name="colorpicker3" value="#FFCD1F"></div>
+                        
+                        <!-- <label for="colorpicker4">Color Picker:</label> -->
+                        <div id="colorpicker4-wrapper"><input type="color" id="colorpicker" name="colorpicker4" value="#1FFF5D"></div>    
+        
+                        <!-- <label for="timepicker">Transition time:</label> -->
+                    </div>
+                    <input type="range" id="transition" name="timepicker" min="5" max="25" value="15"> 
+                </div>
             </div>
         </div>
         <div class="footer"><p class="icon-text">Icons taken from www.icons8.com</p></div>
     </div>
+    <script src = "javascript.js"></script>
 </body>
 </html>

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root{
+    --color1: #1F51FF;
+    --color2: #FF1FC1;
+    --color3: #FFCD1F;
+    --color4: #1FFF5D;
+    --time: 15s;
+}
+
 *{
     /* border: 1px solid red; */
     font-family: monospace;
@@ -6,9 +14,13 @@
 }
 
 body{
-    background: linear-gradient(-45deg, #1F51FF, #FF1FC1, #FFCD1F, #1FFF5D);
+    background: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color4));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient var(--time) ease infinite;
+}
+p{
+    text-align: center;
+    font-size: 18px;
 }
 
 @keyframes gradient {
@@ -24,12 +36,10 @@ body{
 }
 
 .root{
-    display: flex;
+    display: grid;
     margin: 10px 50px;
     height: 800px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    grid-template-columns: 1fr 1.5fr;
     color: white;
 }
 
@@ -51,6 +61,8 @@ a{
     margin: 10px;
     text-align: center;
     text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
     color: white;
 }
 
@@ -65,6 +77,7 @@ a{
 
 .profile-img{
     border-radius: 50%;
+    aspect-ratio: 1;
     margin: 50px 0px;
 }
 
@@ -115,21 +128,81 @@ a{
     color: #8a8a8a;;
 }
 
-#showcase-container{
+/* #showcase-container{
     flex:2;
     display: flex;
-}
+} */
 
 .showcase{
     flex:auto;
-    border-radius: 20px;
-    background-color:rgb(30, 30, 30);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
     grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    padding: 40px;
 }
 
 .project-wrapper{
+    border-radius: 20px;
+    background-color:rgb(30, 30, 30);
     color: white;
+    padding: 30px;
+    display: grid;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile-img{
+        height: 10px;
+    }
+}
+
+.color-picker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+}
+
+#colorpicker-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#colorpicker{
+    margin: 10px;
+    margin-top: 20px;
+    opacity: 0;    
+}
+
+#transition{
+    display: block;
+    margin: 40px;
+}
+
+#colorpicker1-wrapper{
+    background-color: var(--color1);
+    border-radius: 20px;
+}
+
+#colorpicker2-wrapper{
+    background-color: var(--color2);
+    border-radius: 20px;
+}
+
+#colorpicker3-wrapper{
+    background-color: var(--color3);
+    border-radius: 20px;
+}
+
+#colorpicker4-wrapper{
+    background-color: var(--color4);
+    border-radius: 20px;
+}
+
+.link-image{
+    aspect-ratio: 1;
+    height: 20px;
+    margin: 0;
 }
