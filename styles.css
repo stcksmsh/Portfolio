@@ -135,8 +135,8 @@ a{
     justify-content: center;
 }
 
-a:hover{
-    color: 	#9c9b97;
+a img:hover {
+    transform: scale(1.05);
 }
 
 .project-wrapper{
