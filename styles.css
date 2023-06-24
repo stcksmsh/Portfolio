@@ -37,7 +37,7 @@ p{
 
 .root{
     display: grid;
-    margin: 10px 50px;
+    margin: 25px 50px 0px 50px;
     /* height: 800px; */
     grid-template-columns: 1fr 1.5fr;
     color: 	#FAF9F6;
@@ -66,8 +66,9 @@ a{
 }
 
 #profile{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-items: center;
 }
 
 #name{
@@ -79,7 +80,7 @@ a{
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    margin: 50px 0px 0px 0px;
+    margin: 50px 10px;
 }
 
 #links{
@@ -206,6 +207,14 @@ a:hover{
     .showcase{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #profile{
+        flex-direction: column;
+    }
+    
+    .profile-img{
+        margin: 50px 0px 0px 0px;
     }
 
     #name{
