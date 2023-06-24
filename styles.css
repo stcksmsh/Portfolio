@@ -20,6 +20,7 @@ body{
 p{
     text-align: center;
     font-size: 18px;
+    margin: 15px 0px;
 }
 
 @keyframes gradient {
@@ -37,13 +38,12 @@ p{
 .root{
     display: grid;
     margin: 10px 50px;
-    height: 800px;
+    /* height: 800px; */
     grid-template-columns: 1fr 1.5fr;
-    color: white;
+    color: 	#FAF9F6;
 }
 
 .section-container{
-    padding: 20px 30px;
     margin: 10px 30px;
     justify-self:center;
     flex-direction: column;
@@ -62,22 +62,24 @@ a{
     text-decoration: none;
     font-size: 14px;
     vertical-align: middle;
-    color: white;
+    color: 	#FAF9F6;
 }
 
 #profile{
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 #name{
-    margin: 90px 10px;
+    margin: 30px 10px 10px 10px;
     font-size: 25px;
 }
 
 .profile-img{
     border-radius: 50%;
-    aspect-ratio: 1;
-    margin: 50px 0px;
+    height: 150px;
+    width: 150px;
+    margin: 50px 0px 0px 0px;
 }
 
 #links{
@@ -91,9 +93,11 @@ a{
     padding: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 10px;
 }
 
 .skill{
+    font-size: 12px;
     margin: 10px;
     aspect-ratio: 2;
     display: flex;
@@ -107,25 +111,12 @@ a{
     align-self: center;
 }
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #1e1e1e;
-    height: auto;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
 .icon-text{
     text-align: center;
     font-size: 10px;
     margin: 0;
     border: 0;
     padding: 0;
-    color: #8a8a8a;;
 }
 
 /* #showcase-container{
@@ -140,20 +131,19 @@ a{
     grid-gap: 40px;
     grid-template-rows: 1fr 1fr;
     padding: 40px;
+    justify-content: center;
+}
+
+a:hover{
+    color: 	#9c9b97;
 }
 
 .project-wrapper{
     border-radius: 20px;
     background-color:rgb(30, 30, 30);
-    color: white;
+    color: 	#FAF9F6;
     padding: 30px;
     display: grid;
-}
-
-@media screen and (max-width: 1024px) {
-    .profile-img{
-        height: 10px;
-    }
 }
 
 .color-picker{
@@ -206,3 +196,35 @@ a{
     height: 20px;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .root{
+      display:flex;
+      flex-direction: column;
+    }
+
+    .showcase{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #name{
+        text-align: center;
+        margin: 45px 0px;
+        font-size: 15px;
+    }
+
+    .section-container{
+        padding: 10px 15px;
+        margin: 5px 15px;
+    }
+
+    .skill{
+        font-size: 10px;
+    }
+
+    .skill-icon{
+        height: 30px;
+    }
+  }
+  

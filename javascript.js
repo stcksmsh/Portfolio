@@ -25,4 +25,4 @@ document.getElementsByName('colorpicker3')[0].addEventListener("change", (event)
 
 document.getElementsByName('colorpicker4')[0].addEventListener("change", (event)=>{document.documentElement.style.setProperty('--color4', event.target.value);});
 
-document.getElementsByName('timepicker')[0].addEventListener("change", (event) => {document.documentElement.style.setProperty('--time', event.target.value + 's');})
+document.getElementsByName('timepicker')[0].addEventListener("change", (event) => {document.documentElement.style.setProperty('--time', 30 - event.target.value + 's');})
