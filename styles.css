@@ -1,8 +1,8 @@
 :root{
-    --color1: #1F51FF;
-    --color2: #FF1FC1;
-    --color3: #FFCD1F;
-    --color4: #1FFF5D;
+    --color1: #1FFF5D;
+    --color2: #FFCD1F;
+    --color3: #FF1FC1;
+    --color4: #1F51FF;
     --time: 15s;
 }
 
@@ -13,7 +13,7 @@
 }
 
 body{
-    background: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color4));
+    background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4));
     background-size: 400% 400%;
     animation: gradient var(--time) ease infinite;
 }
@@ -25,10 +25,10 @@ p{
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
     }
     100% {
         background-position: 0% 50%;
@@ -41,12 +41,14 @@ p{
     /* height: 800px; */
     grid-template-columns: 1fr 1.5fr;
     color: 	#FAF9F6;
+    align-items: center;
 }
 
 .section-container{
     margin: 10px 30px;
     justify-self:center;
     flex-direction: column;
+    max-width: 400pxs;
 }
 
 .section{
@@ -198,10 +200,11 @@ a img:hover {
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1680px) {
     .root{
       display:flex;
       flex-direction: column;
+      margin: 25px 0px;
     }
 
     .showcase{
@@ -226,7 +229,8 @@ a img:hover {
     .section-container{
         padding: 10px 15px;
         margin: 5px 15px;
-    }
+        max-width: 300px;
+}
 
     .skill{
         font-size: 10px;

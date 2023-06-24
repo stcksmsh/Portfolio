@@ -11,7 +11,6 @@ for (var i = 0; i < skills.length; i++){
     img.classList = ['skill-icon'];
     img.src = './images/' + skills[i] + '.png';
     div.appendChild(img);
-    // div.textContent = skills[i];
     div.innerHTML += skills[i];
     skillWrapper.appendChild(div);
 }
