@@ -146,6 +146,7 @@ a img:hover {
     background-color:rgb(30, 30, 30);
     color: 	#FAF9F6;
     padding: 30px;
+    font-size: 17px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -240,6 +241,7 @@ a img:hover {
 
     .project-wrapper{
         max-width: 80vw;
+        font-size: 12px;
     }
 
     .skill{
