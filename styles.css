@@ -254,16 +254,19 @@ a img:hover {
 
 }
 
-  @media screen and (max-width : 1620px) {
+  @media screen and (max-width : 1720px) {
         #colorpicker-container{
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             grid-template-rows: repeat(2, minmax(0, 1fr));
+            grid-row-gap: 20px;
             justify-items: center;
+            padding: 0px 25px;
         }
 
         .colorpicker-wrapper{
             width: 75%;
+            aspect-ratio: 2;
         }
 
         #colorpicker-text{
