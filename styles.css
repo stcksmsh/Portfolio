@@ -130,9 +130,9 @@ a{
 .showcase{
     flex:auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 40px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
     padding: 40px;
     justify-content: center;
 }
@@ -200,7 +200,11 @@ a img:hover {
     margin: 0;
 }
 
-@media screen and (max-width: 1680px) {
+#colorpicker-text{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1280px) {
     .root{
       display:flex;
       flex-direction: column;
@@ -209,7 +213,7 @@ a img:hover {
 
     .showcase{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, minmax(0, 1fr));
     }
 
     #profile{
@@ -230,7 +234,11 @@ a img:hover {
         padding: 10px 15px;
         margin: 5px 15px;
         max-width: 300px;
-}
+    }
+
+    .project-wrapper{
+        max-width: 80vw;
+    }
 
     .skill{
         font-size: 10px;
@@ -239,5 +247,27 @@ a img:hover {
     .skill-icon{
         height: 30px;
     }
+
+    #colorpicker-text{
+        font-size: 20px;
+    }
+
+}
+
+  @media screen and (max-width : 1620px) {
+        #colorpicker-container{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+            justify-items: center;
+        }
+
+        .colorpicker-wrapper{
+            width: 75%;
+        }
+
+        #colorpicker-text{
+            font-size: 15px;
+        }
   }
   
