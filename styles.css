@@ -147,6 +147,8 @@ a img:hover {
     color: 	#FAF9F6;
     padding: 30px;
     display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .color-picker{
