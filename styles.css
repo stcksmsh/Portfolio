@@ -242,6 +242,7 @@ a img:hover {
     .project-wrapper{
         max-width: 80vw;
         font-size: 12px;
+        max-width: 800px;
     }
 
     .skill{
