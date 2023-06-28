@@ -13,7 +13,6 @@
 <body>
     <div class="root">
         <div class="section-container" style="flex:1;">
-
             <div class="section" id="profile">
                 <img class="profile-img" src="./images/profile-img.jpeg">
                 <span id = "name">
@@ -34,31 +33,31 @@
             </div>
         </div>
         <div class="showcase">
-            <div class="project-wrapper">
-                <a href="https://github.com/stcksmsh/OSCalc/">
-                    <img src="./images/OSCalc-logo.png" width="80%">
-                </a>
-                A simple spreadsheet program
-            </div>
-            <div class="project-wrapper">
-                <a href="https://github.com/stcksmsh/JSOpeN/">
-                    <img src="./images/JSOpeN-logo.png" width="80%">
-                </a>
-                Lightweight JSON parsing package
-            </div>
-            <div class="project-wrapper"></div>
-            <div class="project-wrapper">
-                <div class="color-picker">
-                    <p id="colorpicker-text">Change backround colours and transition speed</p>
-                    <div id="colorpicker-container">
-                        <div id="colorpicker1-wrapper" class="colorpicker-wrapper"><input type="color" id="colorpicker" name="colorpicker1" value="#1FFF5D"></div>    
-                        <div id="colorpicker2-wrapper" class="colorpicker-wrapper"><input type="color" id="colorpicker" name="colorpicker2" value="#FFCD1F"></div>
-                        <div id="colorpicker3-wrapper" class="colorpicker-wrapper"><input type="color" id="colorpicker" name="colorpicker3" value="#FF1FC1"></div>
-                        <div id="colorpicker4-wrapper" class="colorpicker-wrapper"><input type="color" id="colorpicker" name="colorpicker4" value="#1F51FF"></div>
-                    </div>
-                    <input type="range" id="transition" name="timepicker" min="10" max="30" value="20"> 
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/OSCalc-logo.png" class="slideshow-image">
+                    <br><br><br>
+                    <div class="text">Simple spreadsheet program</div>             
+               </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/JSOpeN-logo.png" class="slideshow-image">
+                    <br><br><br>
+                    <div class="text">Lightweight JSON parser for Java</div>
                 </div>
-            </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                <br>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
         </div>
     </div>
     <script src = "javascript.js"></script>
