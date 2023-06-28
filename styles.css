@@ -270,18 +270,22 @@ a img:hover {
     }
 }
 
-@keyframes rotateOut {
+@keyframes rotateOutRight {
     from {
         transform: translateX(0%) rotate(0deg) ;
+        visibility: visible;
+        position: inherit;
         opacity: 1;
     }
     to {
         transform: translateX(75%) translateY(25%) rotate(90deg) ;
+        visibility: hidden;
+        position: absolute;
         opacity: 0;
     }
 }
 
-@keyframes rotateIn {
+@keyframes rotateInLeft {
     from {
         transform: translateX(-75%) translateY(25%) rotate(-90deg) ;
         opacity: 0;
@@ -292,6 +296,60 @@ a img:hover {
     }
 }
 
+
+@keyframes inRight {
+    from{
+    transform: translateX(75%) ;
+    position: absolute;
+    visibility: collapse;
+    opacity: 0;
+}to{
+    transform: translateX(0%) ;
+    visibility: visible;
+    position: inherit;
+    opacity: 1;
+}
+}
+
+@keyframes outLeft {
+from{
+    transform: translateX(0%) ;
+    visibility: visible;
+    position: inherit;
+    opacity: 1;
+}to{
+    transform: translateX(-75%) ;
+    position: absolute;
+    visibility: collapse;
+    opacity: 0;
+}
+}
+
+@keyframes rotateOutLeft {
+from {
+    transform: translateX(0%) rotate(0deg) ;
+    visibility: visible;
+    position: inherit;
+    opacity: 1;
+}
+to {
+    transform: translateX(-75%) translateY(25%) rotate(-90deg) ;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+}
+
+@keyframes rotateInRight {
+from {
+    transform: translateX(75%) translateY(25%) rotate(-90deg) ;
+    opacity: 0;
+}
+to {
+    transform: translateX(0%) rotate(0deg) ;
+    opacity: 1;
+}
+}
 
 @media screen and (max-width: 1280px) {
     .root{
