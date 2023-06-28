@@ -1,8 +1,8 @@
 :root{
-    --color1: #1FFF5D;
-    --color2: #FFCD1F;
-    --color3: #FF1FC1;
-    --color4: #1F51FF;
+    --color1: #FFCD1F;
+    --color2: #1FFF5D;
+    --color3: #1fb8ff;
+    --color4: #ff1fec;
     --time: 15s;
 }
 
@@ -13,8 +13,8 @@
 }
 
 body{
-    background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color3), var(--color2), var(--color1));
-    background-size: 700% 700%;
+    background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4));
+    background-size: 200% 200%;
     animation: gradient var(--time) ease infinite;
 }
 p{
@@ -25,13 +25,13 @@ p{
 
 @keyframes gradient {
     0% {
-        background-position: 0% 15%;
+        background-position: 0% 0%;
     }
     50% {
         background-position: 100% 100%;
     }
     100% {
-        background-position: 0% 15%;
+        background-position: 0% 0%;
     }
 }
 
@@ -165,8 +165,8 @@ a img:hover {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  /* background-color: rgba(30, 30, 30, 0.4);
-  border-radius: 10px; */
+  background-color: rgba(30, 30, 30, 0.25);
+  border-radius: 10px;
 }
 
 
