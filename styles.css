@@ -171,7 +171,8 @@ a img:hover {
 
 
 .mySlides {
-  display: none;
+    visibility: collapse;
+    position: absolute;
 }
 
 
@@ -241,16 +242,56 @@ a img:hover {
   background-color: #717171;
 }
 
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+@keyframes inLeft {
+    from{
+        transform: translateX(-75%) ;
+        position: absolute;
+        visibility: collapse;
+        opacity: 0;
+    }to{
+        transform: translateX(0%) ;
+        visibility: visible;
+        position: inherit;
+        opacity: 1;
+    }
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+@keyframes outRight {
+    from{
+        transform: translateX(0%) ;
+        visibility: visible;
+        position: inherit;
+        opacity: 1;
+    }to{
+        transform: translateX(75%) ;
+        position: absolute;
+        visibility: collapse;
+        opacity: 0;
+    }
 }
+
+@keyframes rotateOut {
+    from {
+        transform: translateX(0%) rotate(0deg) ;
+        opacity: 1;
+    }
+    to {
+        transform: translateX(75%) translateY(25%) rotate(90deg) ;
+        opacity: 0;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: translateX(-75%) translateY(25%) rotate(-90deg) ;
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%) rotate(0deg) ;
+        opacity: 1;
+    }
+}
+
 
 @media screen and (max-width: 1280px) {
     .root{
