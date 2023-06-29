@@ -2,7 +2,7 @@ const skills = ['C', 'C++', 'Python', 'TensorFlow', 'Java', 'JavaScript', 'RISC-
 
 const skillWrapper = document.getElementById('skills')
 let rows = (skills.length + 2) / 3;
-skillWrapper.style.gridTemplateRows = 'repeat(' + rows.toString() + ', 1fr)';
+skillWrapper.style.gridTemplateRows = 'repeat(' + rows.toString() + ', minmax(0, 1fr))';
 
 for (var i = 0; i < skills.length; i++) {
     let div = document.createElement('div');
