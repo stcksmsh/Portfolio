@@ -94,7 +94,7 @@ a{
 #skills{
     display: grid;
     padding: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 10px;
 }
