@@ -41,7 +41,7 @@ function showSlides(n) {
         slides[slideIndex - 1].getElementsByClassName("slideshow-image")[0].style.animation = "rotateOutRight 2s 1 ease forwards"
         slides[slideIndex - 1].style.animation = "outRight 2s 1 ease forwards"
 
-        dots[n - 1].style.backgroundColor = "#717171";
+        dots[n - 1].style.backgroundColor = "#1e1e1ecc";
         slides[n - 1].getElementsByClassName("slideshow-image")[0].style.animation = "rotateInLeft 2s 1 ease forwards"
         slides[n - 1].style.animation = "inLeft 2s 1 ease forwards"
     } else { /// to the left
@@ -52,7 +52,7 @@ function showSlides(n) {
         slides[slideIndex - 1].getElementsByClassName("slideshow-image")[0].style.animation = "rotateOutLeft 2s 1 ease forwards"
         slides[slideIndex - 1].style.animation = "outLeft 2s 1 ease forwards"
 
-        dots[n - 1].style.backgroundColor = "#717171";
+        dots[n - 1].style.backgroundColor = "#1e1e1ecc";
         slides[n - 1].getElementsByClassName("slideshow-image")[0].style.animation = "rotateInRight 2s 1 ease forwards"
         slides[n - 1].style.animation = "inRight 2s 1 ease forwards"
     }
