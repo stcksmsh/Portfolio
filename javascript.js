@@ -19,8 +19,7 @@ for (var i = 0; i < skills.length; i++) {
 }
 
 let slideIndex = 1;
-showSlides(2);
-showSlides(3);
+showSlides(1);
 
 function plusSlides(n) {
     showSlides(slideIndex + n);
