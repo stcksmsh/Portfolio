@@ -22,7 +22,6 @@ body::-webkit-scrollbar{
 }
 
 body{
-    /*overflow: hidden;*/
     background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4));
     background-size: 200% 200%;
     animation: gradient var(--time) ease infinite;
@@ -49,7 +48,6 @@ p{
 .root{
     display: grid;
     margin: 25px 50px 0px 50px;
-    /* height: 800px; */
     grid-template-columns: 1fr 1.5fr;
     color: 	#FAF9F6;
     align-items: center;
@@ -100,7 +98,6 @@ a{
     display: grid;
     padding: 0px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    /* grid-template-rows: repeat(3, minmax(0, 1fr));  will be set by the javascript */ 
     margin-bottom: 25px;
 }
 
@@ -436,9 +433,9 @@ to {
 }
 
 .image-container:hover{
-    transform: rotateY(180deg);
-    /* transform: translateY(-10px); */
-    /* transform: rotateY(180deg) translateY(-10px); */
+    /* transform: rotateY(180deg); */ /* spin around */
+    transform: translateY(-10px); /* go up a bit */
+    /* transform: rotateY(180deg) translateY(-10px); */ /* spin around and go up a bit */
 }
 .thefront{
     position: absolute;
@@ -476,7 +473,6 @@ to {
     transform: translateY(-10px);
     font-size: 18px;
     padding: 10px 15px 15px 15px;
-    /* background-color: rgb(60, 60, 60); */
     background: rgb(60, 80, 80);
     box-shadow: 0 5px 35px rgba(0, 0, 0, 1);
 }

@@ -7,7 +7,6 @@
 }
 
 *{
-    /* border: 1px solid red; */
     font-family: monospace;
     font-weight: 550;
     box-sizing: border-box;
@@ -23,7 +22,6 @@ a{
 }
 
 body{
-    /*overflow: hidden;*/
     background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4));
     background-size: 200% 200%;
     animation: gradient var(--time) ease infinite;
@@ -48,10 +46,7 @@ p{
 }
 
 .root{
-    /* display: grid; */
     margin: 25px 50px 0px 50px;
-    /* height: 800px; */
-    /* grid-template-columns: 1fr 1.5fr; */
     color: 	#FAF9F6;
     align-items: center;
 }
@@ -162,10 +157,7 @@ p{
     height: 150px;
     padding: 10px;
     opacity: 1; 
-    overflow-y: auto; /*ovo mozes da zakomentarises i odredis fiksnu velicinu za content*/
-    /*i da obrises sve ovo dolje za skrol,jer tad ti nebi trebalo */
-    /* align-items: center; */
-}
+    overflow-y: auto; }
 .accordion .contentBx.active .content::-webkit-scrollbar-thumb {
     background: rgb(30, 30, 30); 
     border-radius: 10px; 
@@ -188,7 +180,6 @@ p{
     padding: 20px;
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.7);
     text-align: center;
-    /* animation: logoA infinite ease 5s; */
 }
 .right h1, .left h1{
     font-size: 18px;
