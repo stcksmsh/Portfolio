@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
 }
 
 body{
-    -ms-overflow-style: none;
+    /*overflow: hidden;*/
     background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4));
     background-size: 200% 200%;
     animation: gradient var(--time) ease infinite;
@@ -401,10 +401,6 @@ to {
 
 }
 
-
-/* ****************************************************************************
-changes
-******************************************************************************/
 .slideshow-container{
     overflow: hidden;
     box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
