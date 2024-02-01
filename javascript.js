@@ -1,6 +1,6 @@
-const skills = ['Java', 'C', 'C++',
-    'Python', 'TensorFlow', 'JavaScript',
-    'RISC-V', 'NodeJS', 'React'
+const skills = ['C', 'Java', 'C++',
+    'Python', 'RaspberryPI', 'TensorFlow',
+    'git', 'RISC-V', 'AArch64'
 ]
 
 const skillWrapper = document.getElementById('skills')
