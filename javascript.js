@@ -110,3 +110,12 @@ function showSlides(n) {
     }
     slideIndex = n;
 }
+
+/// make arrows move slides
+window.addEventListener('keyup', function(e) {
+    if (e.key == 'ArrowRight') {
+        plusSlides(1);
+    } else if (e.key == 'ArrowLeft') {
+        plusSlides(-1);
+    }
+});
