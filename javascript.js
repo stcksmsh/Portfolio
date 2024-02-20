@@ -20,7 +20,7 @@ for (var i = 0; i < skills.length; i++) {
 
 
 const slideNames = ['13S112OS1', 'EmojiType', 'BeogradPlusPlus', 'JSOpeN', 'OSCalc'];
-const slideDescriptions = ['RISC-V project kernel for the course Operating Systems 1',
+const slideDescriptions = ['RISC-V operating system projects for courses OS1 and OS2',
 'EmojiType - Emojis on the fly',
 'BeogradPlusPlus - Pointing out flaws in the public transport ticket system',
 'JSOpeN - Lightweight JSON parser for Java',
